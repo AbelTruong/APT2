@@ -1,0 +1,30 @@
+.load-page {
+  overflow: hidden;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 99999;
+
+  .loader {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+  .loader div {
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    border: 2px solid #fff;
+    border-top: 2px solid rgb(43, 220, 20);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite alternate-reverse;
+  }
+}
+@keyframes rotate {
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
