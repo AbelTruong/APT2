@@ -1,15 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  data: null,
+    data: null,
 }
 
 export default createSlice({
-  name: 'storeSetting',
-  initialState,
-  reducers: {
-    setData: (state, action) => {
-      state.data = action.payload
+    name: 'storeSetting',
+    initialState,
+    reducers: {
+        setData: (state, action) => {
+            state.data = action.payload
+        },
     },
-  },
 })

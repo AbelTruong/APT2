@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NewPage = (props) => {
-  return <div>NewPage</div>
+    return <div>NewPage</div>
 }
 
 NewPage.propTypes = {}

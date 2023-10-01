@@ -6,23 +6,23 @@ import LoadingPage from './components/LoadingPage'
 import Toast from './components/Toast'
 
 const AppContainer = (props) => {
-  const { appLoading, notify, actions } = props
+    const { appLoading, notify, actions } = props
 
-  const toastMarkup = notify?.show && (
-    <Toast error={notify.error} content={notify.message} actions={actions} />
-  )
+    const toastMarkup = notify?.show && (
+        <Toast error={notify.error} content={notify.message} actions={actions} />
+    )
 
-  return (
-    <div className="bg-bg-light dark:bg-bg-dark font-secondary">
-      <BrowserRouter>
-        <App {...props} />
+    return (
+        <div className="bg-bg-light dark:bg-bg-dark font-secondary">
+            <BrowserRouter>
+                <App {...props} />
 
-        {appLoading?.loading && <LoadingPage {...appLoading} />}
+                {appLoading?.loading && <LoadingPage {...appLoading} />}
 
-        {toastMarkup}
-      </BrowserRouter>
-    </div>
-  )
+                {toastMarkup}
+            </BrowserRouter>
+        </div>
+    )
 }
 
 AppContainer.propTypes = {}

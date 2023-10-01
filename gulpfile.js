@@ -4,13 +4,13 @@ require('dotenv').config()
  * Update shopify scopes from .env file into shopify.app.toml file
  */
 const updateScopes = async () => {
-  return 1
+    return 1
 }
 
 async function defaultTask(cb) {
-  updateScopes()
+    updateScopes()
 
-  cb()
+    cb()
 }
 
 exports.default = defaultTask

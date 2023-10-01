@@ -3,9 +3,9 @@ import appLoading from './appLoading'
 import notify from './notify'
 
 const slices = {
-  storeSetting,
-  appLoading,
-  notify,
+    storeSetting,
+    appLoading,
+    notify,
 }
 
 export default slices

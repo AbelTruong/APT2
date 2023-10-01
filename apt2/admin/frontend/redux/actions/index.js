@@ -3,7 +3,7 @@ import * as appLoading from './appLoading'
 import * as notify from './notify'
 
 export default {
-  ...storeSetting,
-  ...appLoading,
-  ...notify,
+    ...storeSetting,
+    ...appLoading,
+    ...notify,
 }

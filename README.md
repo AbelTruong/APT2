@@ -14,15 +14,15 @@ Dự án cá nhân
 
 # Hệ thống:
 
-- Bao gồm:
-  - Trang admin: quản lý thông tin của sản phẩm, thông tin khách hàng, hóa đơn, ...
-  - Trang Storefront: Hiển thị thông tin sản phẩm, đưa sản phẩm tiếp cận đến khách hàng. Thiên
-    hướng về SEO nhiều hơn
+-   Bao gồm:
+    -   Trang admin: quản lý thông tin của sản phẩm, thông tin khách hàng, hóa đơn, ...
+    -   Trang Storefront: Hiển thị thông tin sản phẩm, đưa sản phẩm tiếp cận đến khách hàng. Thiên
+        hướng về SEO nhiều hơn
 
 # Công nghệ
 
-- Công nghệ tổng quan: Build dự án bằng html, css, scss, tailwindcss, reactjs, nodejs, remix,
-  postgregql + requelize. - Trang Admin: Reactjs, Nodejs, Postgresql + Sequelize. Quản lý hình ảnh bằng cloundary. - Trang storefront: remix hết hợp react, react-router-dom. thiên hướng build SSR. Hỗ trợ SEO, ...
+-   Công nghệ tổng quan: Build dự án bằng html, css, scss, tailwindcss, reactjs, nodejs, remix,
+    postgregql + requelize. - Trang Admin: Reactjs, Nodejs, Postgresql + Sequelize. Quản lý hình ảnh bằng cloundary. - Trang storefront: remix hết hợp react, react-router-dom. thiên hướng build SSR. Hỗ trợ SEO, ...
 
 # Database
 

@@ -5,17 +5,19 @@ import actions from './redux/actions'
 import reducer from './redux/reducer'
 
 const AppStore = (props) => {
-  const dispatch = useDispatch()
+    const dispatch = useDispatch()
 
-  let reduxState = {}
-  Object.keys(reducer).forEach((key) => (reduxState[key] = useSelector((state) => state[key].data)))
+    let reduxState = {}
+    Object.keys(reducer).forEach(
+        (key) => (reduxState[key] = useSelector((state) => state[key].data))
+    )
 
-  let reduxActions = {}
-  Object.keys(actions).forEach((key) => {
-    reduxActions[key] = async (data) => await actions[key](dispatch, data)
-  })
+    let reduxActions = {}
+    Object.keys(actions).forEach((key) => {
+        reduxActions[key] = async (data) => await actions[key](dispatch, data)
+    })
 
-  return <AppContainer {...reduxState} actions={reduxActions} dispatch={dispatch} />
+    return <AppContainer {...reduxState} actions={reduxActions} dispatch={dispatch} />
 }
 
 export default AppStore

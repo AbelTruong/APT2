@@ -1,7 +1,10 @@
 # Ignore artifacts:
 build
-coverage
 dist
+coverage
 
 # Ignore all HTML files:
-# *.html
+**/*.html
+
+# Ignore all CSS files:
+**/*.css

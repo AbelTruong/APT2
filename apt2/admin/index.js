@@ -68,9 +68,9 @@ app.use(bodyParser.json())
  * phục vụ cac tài nguyên như css, js, image từ các thư mục tĩnh trên server.
  */
 app.use(
-  NODE_ENV === 'development'
-    ? express.static(path.join(__dirname, 'public'))
-    : express.static(path.join(__dirname, '..', 'web/frontend', 'dist', 'index.html'))
+    NODE_ENV === 'development'
+        ? express.static(path.join(__dirname, 'public'))
+        : express.static(path.join(__dirname, '..', 'web/frontend', 'dist', 'index.html'))
 )
 
 // upload routes
@@ -81,37 +81,37 @@ adminRoute(app)
 
 // handle routes NOT FOUND
 app.get('/*', function (req, res) {
-  NODE_ENV === 'development'
-    ? res.render('index', { title: 'Express' })
-    : res.sendFile(path.join(__dirname, '..', 'web/frontend', 'dist', 'index.html'))
+    NODE_ENV === 'development'
+        ? res.render('index', { title: 'Express' })
+        : res.sendFile(path.join(__dirname, '..', 'web/frontend', 'dist', 'index.html'))
 })
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  next(createError(404))
+    next(createError(404))
 })
 
 // error handler
 app.use(function (err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message
-  res.locals.error = req.app.get('env') === 'development' ? err : {}
+    // set locals, only providing error in development
+    res.locals.message = err.message
+    res.locals.error = req.app.get('env') === 'development' ? err : {}
 
-  // render the error page
-  res.status(err.status || 500)
-  res.render('error')
+    // render the error page
+    res.status(err.status || 500)
+    res.render('error')
 })
 
 // start server
 app.listen(PORT, () => {
-  console.log(``)
-  console.log(`-----------------------------------------------------------`)
-  console.log(``)
-  console.log(`     Run app: http://localhost:${PORT}/`)
-  console.log(`     WELCOME TO ABEL'S BLOGS!!`)
-  console.log(``)
-  console.log(`-----------------------------------------------------------`)
-  console.log(``)
+    console.log(``)
+    console.log(`-----------------------------------------------------------`)
+    console.log(``)
+    console.log(`     Run app: http://localhost:${PORT}/`)
+    console.log(`     WELCOME TO ABEL'S BLOGS!!`)
+    console.log(``)
+    console.log(`-----------------------------------------------------------`)
+    console.log(``)
 })
 
 export default app

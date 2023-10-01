@@ -4,7 +4,7 @@
   "main": "web/index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "hydrogen": "cd apt2/hydrogen && yarn dev",
+    "hydrogen": "cd apt2/hydrogen && yarn develop",
     "dev:admin_be": "cd apt2/admin && yarn dev",
     "dev:admin_fe": "cd apt2/admin/frontend && yarn dev",
     "admin": "npm-run-all -p dev:*",
