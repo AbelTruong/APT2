@@ -4,9 +4,10 @@
   "main": "web/index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "dev:hydrogen": "cd apt2/hydrogen && yarn dev",
-    "dev_admin:be": "cd apt2/admin && yarn dev",
-    "dev_admin:fe": "cd apt2/admin/frontend && yarn dev",
+    "hydrogen": "cd apt2/hydrogen && yarn dev",
+    "dev:admin_be": "cd apt2/admin && yarn dev",
+    "dev:admin_fe": "cd apt2/admin/frontend && yarn dev",
+    "admin": "npm-run-all -p dev:*",
     "typecheck": "tsc --noEmit",
     "prettier:code": "prettier \"**/*.{js,jsx,ts,tsx}\"",
     "prettier:other": "prettier \"**/*.{md,css,scss,yaml,yml}\"",
